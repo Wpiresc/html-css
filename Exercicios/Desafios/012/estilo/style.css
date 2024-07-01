@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Xilosa';
+    src: url(xilosa_.ttf) format(truetype), url(xilosa_.ttf) format(opentype);
+}
+@font-face {    
+    font-family: 'EldesCordel';
+    src: url(EldesCordel-Demo.otf) format(opentype), url(EldesCordel-Demo.otf) format(truetype);
+    }
+
+@font-face {
+    font-family: 'CordelEncarnado';
+    src: url(Cordel\ Encarnado.otf) format(opentype), url(Cordel\ Encarnado\ II.otf) format(opentype);
+}
+
+@font-face {
+    font-family: 'Cordelina'; src: url(cordelina.otf) format(opentype);
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Xilosa';
+    --fonte3: 'EldesCordel';
+    --fonte4: 'CordelEncarnado';
+    --fonte5: 'Cordelina';   
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -19,6 +45,8 @@ header {
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte5);
+    font-size: 6vw;
 }
 
 header > p {
@@ -40,6 +68,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3vw;
 }
 
 section.normal {
@@ -52,8 +82,11 @@ section.imagem {
     color: white;
 }
 
-/*section.imagem > p {
-    background-color: RGB(0, 0, 0, 0.200)*/
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: RGB(0, 0, 0, 0.200)
+}
 
 footer {
     color: white;
