@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(0, 255, 170);
+}
+
+header > h1{
+    font-variant: small-caps;
+    font-size: 6vw;
+}
+
+header > img {
+    padding-top: 20px;
+    padding-left: 45px;
+}
+
+header > nav > a {
+    padding: 20px;
+    
+}
+
+nav {
+    text-align: center;
+}
+
+h1, h2 {
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+}
+
+
