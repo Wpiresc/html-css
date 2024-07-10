@@ -8,6 +8,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    background-image:url(https://www.conexasaude.com.br/blog/wp-content/uploads/2021/08/o-que-e-cuidado-integrado-768x401.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 header {
@@ -20,25 +24,55 @@ header > h1{
 }
 
 header > img {
-    padding-top: 20px;
+    padding-top: 10px;
     padding-left: 45px;
+    padding-bottom: 5px;
+    box-shadow: none;
 }
 
 header > nav > a {
+    padding: 15px;
+    border: 0px solid white;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(0, 201, 134);
+    text-decoration: none;
+}
+
+header > nav > a:hover {
+    background-color: rgb(65, 197, 153);
+}
+
+.nav {
+    position: fixed;
+    top: 35px;
+    left: 580px;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    max-width: 100%;
+    margin-right: 20px;
+    padding-top: 25px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+h1, p {
     padding: 20px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+footer {
     
 }
-
-nav {
-    text-align: center;
-}
-
-h1, h2 {
-    padding: 10px;
-}
-
-p {
-    padding: 10px;
-}
-
-
