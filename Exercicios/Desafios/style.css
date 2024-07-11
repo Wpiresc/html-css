@@ -44,7 +44,7 @@ header > nav > a:hover {
 }
 
 .nav {
-    position: fixed;
+    position: absolute;
     top: 35px;
     left: 580px;
     width: 100%;
@@ -74,5 +74,10 @@ h2 {
 }
 
 footer {
-    
+    background-color: rgba(0, 255, 170, 0.185);
+}
+
+.telefone {
+    font-weight: bold;
+    font-size: 1.5em;
 }
