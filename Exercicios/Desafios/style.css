@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+@media (max-width: 600px) {
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -17,7 +21,7 @@ body {
     background-image:url(https://www.conexasaude.com.br/blog/wp-content/uploads/2021/08/o-que-e-cuidado-integrado-768x401.png);
     background-size: cover;
     background-repeat: no-repeat;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 header {
@@ -53,10 +57,34 @@ header > nav > a:hover {
 
 }
 
+main {
+    padding: 20px;
+    border-radius: 10px;    
+}
+
+li {
+    list-style: none;
+    padding: 4px;
+}
+
+.texto {
+    margin-top: 20px;
+    max-width: 1000px ;
+    min-width: 700px;
+}
+
+.texto2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
 .container {
     display: flex;
-    align-items: center;
-    max-width: 100%;
+    text-align: justify;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+    
+    
 }
 
 .container img {
@@ -65,34 +93,12 @@ header > nav > a:hover {
     padding-top: 25px;
     margin-left: 20px;
     border-radius: 15px 15px 15px 15px;
-}
-
-section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    padding-left: 30px;
-}
-
-section#imagem01 {
-    background-image: url(Clinica_Lab\ -\ Morro\.jpeg);
-    background-position: right;
-    background-repeat: no-repeat;  
-}
-
-section#imagem02 {
-    background-image: url(Clinica_Lab\ -\ Xiq\.jpg);
-    background-position: right;
-    background-repeat: no-repeat;
+    height: auto;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-}
-
-#Empresas {
-    position: ;
-    margin-right: 25px;
 }
 
 h1, p, h3 {
@@ -105,6 +111,7 @@ h2 {
 
 footer {
     background-color: rgba(0, 255, 170, 0.185);
+    padding: 10px;
 }
 
 .telefone {
