@@ -24,7 +24,6 @@ header > img {
     padding-top: 10px;
     padding-left: 45px;
     padding-bottom: 5px;
-    box-shadow: none;
 }
 
 header > nav > a {
@@ -34,18 +33,21 @@ header > nav > a {
     color: white;
     background-color: rgb(0, 196, 170);
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 header > nav > a:hover {
     background-color: rgb(65, 197, 197);
 }
 
-.nav {
-    position: absolute;
-    top: 35px;
-    left: 580px;
-    width: 100%;
+nav {
+    display: flex;
+    justify-content: flex-end;
+    
+}
 
+.nav {
+    flex-wrap: wrap;
 }
 
 main {
@@ -60,8 +62,8 @@ li {
 
 .texto {
     margin-top: 20px;
-    max-width: 1000px ;
-    min-width: 700px;
+    max-width: 900px ;
+    min-width: 350px;
 }
 
 .texto2 {
@@ -73,21 +75,21 @@ li {
     display: flex;
     text-align: justify;
     margin-top: 20px;
+    padding-right: 30px;
+}
+
+.container2 {
+    display: block;
+    text-align: justify;
+    margin-top: 20px;
 }
 
 .container img {
-    max-width: 98%;
+    max-width: 50%;
     margin-right: 20px;
     padding-top: 25px;
     margin-left: 20px;
     border-radius: 15px 15px 15px 15px;
-    height: auto;
-}
-
-section.imagem > p {
-    display: inline-block;
-    padding: 5px;
-    margin: 0px;
 }
 
 h1, p, h3 {
@@ -112,8 +114,14 @@ footer {
     body {
         overflow-x: hidden;
     }
+
+    nav a {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
     .container {
-        display: grid;
+    display: grid;
     text-align: justify;
     margin-top: 20px;
     }
